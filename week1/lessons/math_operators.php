@@ -5,6 +5,7 @@
 
 $x=10;
 $y=20;
+$z=15;
 
 echo "\n";
 echo "x plus y is " .($x + $y);
@@ -17,5 +18,11 @@ echo "x times y is " .($x * $y);
 
 echo "\n";
 echo "x divided by y is " .($x/$y);
+
+//modulus - remainder
+echo "\n";
+echo "The remainder of y divided by z is " .($y%$z);
+
+echo "\n";
 
 ?>
