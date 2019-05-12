@@ -1,6 +1,8 @@
 <?php
 //http://www.informit.com/articles/article.aspx?p=1221430&seqNum=3
 
+// =, simply an assignment operator
+// saying $w equals "1"
 $w = "1";
 $x = 1;
 $y = 2;
@@ -24,4 +26,10 @@ echo "\n";
 echo var_dump($y === $z);
 echo "\n";
 
+// re-assignment, $w now equals 2
+$w = "2";
+echo var_dump($w == $x);
+echo "\n";
+echo var_dump($w == $y);
+echo "\n";
 ?>
