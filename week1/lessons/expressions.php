@@ -7,6 +7,9 @@ $x = 2;
 $y = 2;
 $z = 3;
 
+//this is a statement: ($x == $y)
+//this is an expression: (($x == $y) and ($v == $w))
+
 // &&, and - and expression. Both expressions have to equate to true
 echo var_dump(($x == $y) && ($v == $w));
 echo "\n";
