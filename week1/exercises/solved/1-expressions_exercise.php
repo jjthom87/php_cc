@@ -4,8 +4,7 @@
 	Using these variables:
 		1. Write an expression that makes 2 statements true
 		2. Write an expression that makes 2 statements false
-		3. Write an expression where only one statement is true
-		4. Write an expression where one statement is true and one statement is false
+		3. Write an expression where only one statement is true. The whole expression equates to true
 
 		You can only use each variable once in an expression
 		You have to use the math operators in each statement
@@ -30,8 +29,16 @@ $j = 10;
 $k = 0;
 
 // 1
-echo var_dump((($b + $d) == ($f + $k)) && (($a + $g) == ($c + $e)));
-// or
-echo var_dump((($a + $b) != ($c + $d)) && (($e + $f) != ($g + $h)));
+echo var_dump((($b + $d) == ($f + $k)) and (($a + $g) == ($c + $e)));
+// and
+echo var_dump((($a + $b) != ($c + $d)) and (($e + $f) != ($g + $h)));
+
+//2
+echo var_dump((($a + $b) == ($c + $d)) and (($e + $f) == ($g + $h)));
+
+//3
+echo var_dump((($a + $b) != ($c + $d)) or (($e + $f) == ($g + $h)));
+// and
+echo var_dump((($a + $b) != ($c + $d)) xor (($e + $f) == ($g + $h)));
 
 ?>
