@@ -10,4 +10,12 @@ echo "\n";
 echo GREETING;
 echo "\n";
 
+define("PS", "This is going to be fun!");
+
+echo "\n";
+//the . is used to concatenate the string
+//the " " is used as a space
+echo GREETING .", " .PS; 
+echo "\n";
+
 ?>
