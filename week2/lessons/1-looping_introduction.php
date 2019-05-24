@@ -22,16 +22,41 @@
 
 //instantiating array
 $languages = array("php", "java", "javascript");
-
+$loopingString = "jeremiah was a bullfrog";
+$newString = "";
 //2 different ways of writing a for loop here
 for($i = 0; $i < sizeof($languages); $i++){
 	echo "\n";
 	echo $languages[$i];
 }
 
+echo "\n";
+
 foreach ($languages as $language) {
 	echo "\n";
 	echo $language;
 }
+
+echo "\n";
+
+//see what happens when you change to $i to 1
+//that means you're starting at the 1 index
+for($i = 1; $i < sizeof($languages); $i++){
+	echo "\n";
+	echo $languages[$i];
+}
+
+echo "\n";
+
+//use strlen for the length of a string
+//we're starting at the 10th index of the string
+//this is an example of appending to a string: https://www.tutorialrepublic.com/faq/how-to-append-a-string-in-php.php
+for($i = 10; $i < strlen($loopingString); $i++){
+	$newString .= $loopingString[$i];
+}
+
+echo "\n";
+echo $newString;
+echo "\n";
 
 ?>
