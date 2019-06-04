@@ -1,0 +1,28 @@
+<?php
+
+$names = array("bill", "bob", "jim", "jack", "matt", "george", "rick", "jared", "barry");
+$specificNamesOne = array();
+$specificNamesTwo = array();
+/*
+
+	1. Loop through the $names array
+	2. In the $specificNamesOne array, push only names that are 5 letters in length 
+	3. In the $specificNamesTwo array, push only names that are 4 letters in length and contain the letter "a"
+
+*/
+
+/*
+	Write the loop code below here
+*/
+
+echo "\n";
+
+echo var_dump($specificNamesOne);
+
+echo "\n";
+
+echo var_dump($specificNamesTwo);
+
+echo "\n";
+
+?>
